@@ -13,6 +13,8 @@ def show_menu():
     projects = {
         "Home": "projects.main.app",
         "Analysis Dashboard": "projects.dashboard.app",
+        "Dynamic Table Filter": "projects.dynamicTableFilter.app",
+        "Investment Simulator": "projects.investmentSimulator.app"
     }
     return st.sidebar.selectbox("Choose a project", list(projects.keys())), projects
 
