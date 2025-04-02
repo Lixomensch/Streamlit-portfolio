@@ -18,7 +18,10 @@ def show_menu():
         "Interactive Map": "projects.Interactive Map.app",
         "Form Validation": "projects.Form Validation.app",
         "Real Time Text Analysis": "projects.Real Time Text Analysis.app",
-        "Simple Recommendation": "projects.Simple Recommendation.app"
+        "Simple Recommendation": "projects.Simple Recommendation.app",
+        "ML Prediction App": "projects.Ml Prediction App.app",
+        "Multi Page Dashboard": "projects.Multi Page Dashboard.app",
+        "Weather App": "projects.Weather Api App.app"
     }
     return st.sidebar.selectbox("Choose a project", list(projects.keys())), projects
 
