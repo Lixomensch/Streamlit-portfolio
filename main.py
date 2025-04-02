@@ -14,7 +14,11 @@ def show_menu():
         "Home": "projects.main.app",
         "Analysis Dashboard": "projects.dashboard.app",
         "Dynamic Table Filter": "projects.dynamicTableFilter.app",
-        "Investment Simulator": "projects.investmentSimulator.app"
+        "Investment Simulator": "projects.investmentSimulator.app",
+        "Interactive Map": "projects.Interactive Map.app",
+        "Form Validation": "projects.Form Validation.app",
+        "Real Time Text Analysis": "projects.Real Time Text Analysis.app",
+        "Simple Recommendation": "projects.Simple Recommendation.app"
     }
     return st.sidebar.selectbox("Choose a project", list(projects.keys())), projects
 

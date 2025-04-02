@@ -3,6 +3,14 @@ import pandas as pd
 import plotly.express as px
 
 def show():
+    """
+    Displays a data analysis dashboard with a file uploader, data preview, and
+    statistics for a selected numeric column (mean, median, standard deviation).
+    Also displays a histogram of the selected column.
+
+    If the uploaded file does not contain any numeric columns, a warning message
+    is displayed. If no file is uploaded, an information message is displayed.
+    """
     st.title("📊 Data Analysis Dashboard")
 
     uploaded_file = st.file_uploader("Upload a CSV file", type=["csv"])
