@@ -26,7 +26,18 @@ def show_menu():
     return st.sidebar.selectbox("Choose a project", list(projects.keys())), projects
 
 def load_project(project_name, projects):
-    """Dynamically loads the selected project module."""
+    """
+    Loads and displays the selected project module.
+
+    Args:
+        project_name (str): The name of the project selected by the user.
+        projects (dict): A dictionary where keys are project names and values
+                         are the corresponding module paths.
+
+    The function imports the module corresponding to the selected project
+    and calls its `show` function to display the project.
+    If the project is not found in the dictionary, an error message is displayed.
+    """
     if project_name in projects:
         project_module = importlib.import_module(projects[project_name])
         project_module.show()
@@ -34,7 +45,15 @@ def load_project(project_name, projects):
         st.error("Project not found.")
 
 def main():
-    """Main function that manages navigation between the main window and the projects."""
+    """
+    Main function to display the project portfolio application.
+
+    This function initializes the application by displaying the sidebar menu
+    with a list of projects for the user to select from. Upon user selection,
+    the corresponding project module is dynamically imported and displayed
+    using Streamlit. If no project is selected, the application remains on the
+    main menu.
+    """
     choice, projects = show_menu()
     
     if choice:
