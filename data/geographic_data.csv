@@ -1,0 +1,8 @@
+name,latitude,longitude,category
+New York,40.7128,-74.006,City
+Los Angeles,34.0522,-118.2437,City
+Chicago,41.8781,-87.6298,City
+Miami,25.7617,-80.1918,City
+Tech Conference,37.7749,-122.4194,Event
+Music Festival,36.1627,-86.7816,Event
+Startup Meetup,47.6062,-122.3321,Event
